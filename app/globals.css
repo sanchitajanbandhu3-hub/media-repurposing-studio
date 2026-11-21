@@ -26,3 +26,13 @@ article { transition: transform 350ms ease, box-shadow 350ms ease; transform-sty
 article:hover { transform: perspective(900px) rotateX(1deg) translateY(-3px); box-shadow: 0 20px 50px rgba(32,37,34,.09); }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } button, article { transition: none; } button:hover, article:hover { transform: none; } }
 
+
+body { overflow-x: clip; }
+.hero-title .hero-word { display: block; width: fit-content; max-width: 100%; }
+.hero-from-top { transform-origin: 50% 0%; }
+.hero-from-bottom { transform-origin: 50% 100%; }
+@keyframes hero-from-top { from { opacity: 0; transform: perspective(500px) translate3d(0,-150px,-120px) rotateX(58deg) scale(.84); filter: blur(8px); } to { opacity: 1; transform: perspective(500px) translate3d(0,0,0) rotateX(0) scale(1); filter: blur(0); } }
+@keyframes hero-from-bottom { from { opacity: 0; transform: perspective(500px) translate3d(0,150px,-120px) rotateX(-58deg) scale(.84); filter: blur(8px); } to { opacity: 1; transform: perspective(500px) translate3d(0,0,0) rotateX(0) scale(1); filter: blur(0); } }
+.hero-delay-two { animation-delay: 450ms; }
+.hero-delay-three { animation-delay: 750ms; }
+

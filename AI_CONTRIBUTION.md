@@ -48,3 +48,5 @@
 
 | UX polish follow-up | Added sticky navigation, smooth in-page movement, visible focus state, and restrained card/button motion. | User requested higher UX quality for hackathon judging. |
 
+| UX correction | Strengthened hero word entrance and fixed narrow-screen horizontal overflow after checking the deployed appearance. | User reported animation not visible. |
+

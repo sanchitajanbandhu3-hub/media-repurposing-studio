@@ -116,3 +116,7 @@
 ## UX polish follow-up
 - Made navigation sticky with a translucent backdrop, enabled smooth anchor scrolling, improved keyboard focus visibility, and added restrained hover depth with reduced-motion fallback.
 
+
+## Hero motion visibility and overflow fix
+- Strengthened vertical 3D word entrance and stagger; constrained hero columns and clipped horizontal overflow on narrow viewports.
+

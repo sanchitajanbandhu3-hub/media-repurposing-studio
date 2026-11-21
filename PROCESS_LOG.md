@@ -120,3 +120,7 @@
 ## Hero motion visibility and overflow fix
 - Strengthened vertical 3D word entrance and stagger; constrained hero columns and clipped horizontal overflow on narrow viewports.
 
+
+## UX product preview
+- Added original abstract clip preview with time range and waveform to make the product purpose visible in the landing hero.
+

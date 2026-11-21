@@ -50,3 +50,5 @@
 
 | UX correction | Strengthened hero word entrance and fixed narrow-screen horizontal overflow after checking the deployed appearance. | User reported animation not visible. |
 
+| UX product preview | Added an original clip preview card and restrained waveform animation. | User requested additional elegant UX polish. |
+

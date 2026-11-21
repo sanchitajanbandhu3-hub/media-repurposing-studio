@@ -44,3 +44,5 @@
 
 | 19 | Added secret-safe Git ignore and corrected README setup/architecture/feature status. | User needs a fast hackathon submission. |
 
+| Landing page polish | Added hero motion and creator credit requested by user. | User chose exact creator credit text: Sanchita Janbandhu. |
+

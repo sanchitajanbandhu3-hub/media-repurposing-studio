@@ -108,3 +108,7 @@
 ## Step 19 — Submission setup and secret safety
 - Added .gitignore rules for local keys and build output. Rewrote README with accurate implemented scope, run instructions, API fallback, and MVP limits.
 
+
+## Landing page motion and credit
+- Added alternating vertical 3D-style hero word entrances with staggered timing and reduced-motion handling; added creator credit footer.
+

@@ -4,3 +4,14 @@
 :root { color-scheme: light; }
 * { box-sizing: border-box; }
 body { margin: 0; background: #f4f4ef; color: #202522; font-family: Arial, Helvetica, sans-serif; }
+
+.hero-title { perspective: 900px; }
+.hero-word { display: block; opacity: 0; transform-style: preserve-3d; animation-duration: 900ms; animation-timing-function: cubic-bezier(.2,.7,.2,1); animation-fill-mode: forwards; }
+.hero-from-top { animation-name: hero-from-top; }
+.hero-from-bottom { animation-name: hero-from-bottom; }
+.hero-delay-two { animation-delay: 180ms; }
+.hero-delay-three { animation-delay: 320ms; }
+@keyframes hero-from-top { from { opacity: 0; transform: translateY(-42px) rotateX(22deg); } to { opacity: 1; transform: translateY(0) rotateX(0); } }
+@keyframes hero-from-bottom { from { opacity: 0; transform: translateY(42px) rotateX(-22deg); } to { opacity: 1; transform: translateY(0) rotateX(0); } }
+@media (prefers-reduced-motion: reduce) { .hero-word { opacity: 1; animation: none; transform: none; } }
+

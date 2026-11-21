@@ -46,3 +46,5 @@
 
 | Landing page polish | Added hero motion and creator credit requested by user. | User chose exact creator credit text: Sanchita Janbandhu. |
 
+| UX polish follow-up | Added sticky navigation, smooth in-page movement, visible focus state, and restrained card/button motion. | User requested higher UX quality for hackathon judging. |
+

@@ -15,3 +15,14 @@ body { margin: 0; background: #f4f4ef; color: #202522; font-family: Arial, Helve
 @keyframes hero-from-bottom { from { opacity: 0; transform: translateY(42px) rotateX(-22deg); } to { opacity: 1; transform: translateY(0) rotateX(0); } }
 @media (prefers-reduced-motion: reduce) { .hero-word { opacity: 1; animation: none; transform: none; } }
 
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+button, a, input, textarea, select { -webkit-tap-highlight-color: transparent; }
+button { transition: transform 240ms ease, background-color 240ms ease, border-color 240ms ease, box-shadow 240ms ease; }
+button:hover { transform: translateY(-2px); }
+button:active { transform: translateY(0) scale(.99); }
+:focus-visible { outline: 2px solid #315b4e; outline-offset: 3px; }
+article { transition: transform 350ms ease, box-shadow 350ms ease; transform-style: preserve-3d; }
+article:hover { transform: perspective(900px) rotateX(1deg) translateY(-3px); box-shadow: 0 20px 50px rgba(32,37,34,.09); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } button, article { transition: none; } button:hover, article:hover { transform: none; } }
+

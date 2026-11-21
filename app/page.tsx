@@ -125,7 +125,7 @@ export default function Home() {
     setMetrics(updated); localStorage.setItem("studio-metrics", JSON.stringify(updated));
   }
   return <main className="min-h-screen bg-paper text-ink">
-    <header className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-5 px-6 py-7 md:px-12"><a className="text-xs uppercase tracking-[0.3em]" href="/">STUDIO / 01</a><nav aria-label="Main navigation" className="flex flex-wrap gap-5">{[["Transcript", "#transcript"], ["Clips", "#clip-results"], ["Calendar", "#calendar"], ["Performance", "#performance"]].map(([label, href]) => <a key={href} href={href} className="text-[10px] uppercase tracking-[0.16em] text-neutral-500 hover:text-forest">{label}</a>)}</nav><span className="hidden text-xs uppercase tracking-[0.2em] text-neutral-500 md:inline">A quieter way to create</span></header>
+    <header className="sticky top-0 z-30 mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-5 border-b border-neutral-200/70 bg-paper/90 px-6 py-5 backdrop-blur-md md:px-12"><a className="text-xs uppercase tracking-[0.3em]" href="/">STUDIO / 01</a><nav aria-label="Main navigation" className="flex flex-wrap gap-5">{[["Transcript", "#transcript"], ["Clips", "#clip-results"], ["Calendar", "#calendar"], ["Performance", "#performance"]].map(([label, href]) => <a key={href} href={href} className="text-[10px] uppercase tracking-[0.16em] text-neutral-500 hover:text-forest">{label}</a>)}</nav><span className="hidden text-xs uppercase tracking-[0.2em] text-neutral-500 md:inline">A quieter way to create</span></header>
     <section className="mx-auto grid max-w-7xl gap-14 px-6 pb-20 pt-12 md:grid-cols-[0.9fr_1.1fr] md:px-12 md:pt-24">
       <div><p className="mb-6 text-xs uppercase tracking-[0.3em] text-forest">From long form to lasting</p><h1 className="hero-title max-w-xl text-5xl font-light uppercase leading-[1.08] tracking-[0.1em] md:text-6xl"><span className="hero-word hero-from-top">Make</span><span className="hero-word hero-from-bottom">more</span><span className="hero-word hero-from-top hero-delay-two">from every</span><span className="hero-word hero-from-bottom hero-delay-three">conversation.</span></h1><p className="mt-7 max-w-md text-sm leading-7 text-neutral-500">Bring a transcript into the studio. We’ll find the moments worth sharing and shape them into thoughtful content.</p><button onClick={() => { transcriptBox.current?.scrollIntoView({ behavior: "smooth", block: "center" }); transcriptBox.current?.focus({ preventScroll: true }); }} className="mt-8 bg-ink px-6 py-4 text-[10px] uppercase tracking-[0.18em] text-white">Start with a transcript</button><div className="mt-10 flex gap-3"><span className="h-px w-10 self-center bg-forest"/><span className="text-xs uppercase tracking-[0.2em]">01 / Transcript intake</span></div>
       </div>
@@ -142,6 +142,7 @@ export default function Home() {
     <footer className="border-t border-neutral-200 px-6 py-8 text-center text-[10px] uppercase tracking-[0.24em] text-neutral-500">By Sanchita Janbandhu</footer>
   </main>;
 }
+
 
 
 

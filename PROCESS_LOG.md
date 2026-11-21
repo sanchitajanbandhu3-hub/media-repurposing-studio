@@ -112,3 +112,7 @@
 ## Landing page motion and credit
 - Added alternating vertical 3D-style hero word entrances with staggered timing and reduced-motion handling; added creator credit footer.
 
+
+## UX polish follow-up
+- Made navigation sticky with a translucent backdrop, enabled smooth anchor scrolling, improved keyboard focus visibility, and added restrained hover depth with reduced-motion fallback.
+
